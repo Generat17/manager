@@ -1,0 +1,162 @@
+/* Внешний слой */
+.password-manager {
+    width: 100vw;
+    height: 100vh;
+}
+
+/* Контент */
+.password-manager__content {
+    padding-top: 50px;
+    display: flex;
+}
+
+/* Блок сервисов */
+.service {
+    border-right: 4px solid gray;
+}
+
+/* Управление сервисами */
+.service__control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Список сервисов */
+.service__list {
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 50px - 92px) /* 92px = высота блока Управление сервисами */
+}
+
+.service__list__element {
+    margin: 2px 10px;
+    font-size: 25px;
+    box-sizing: border-box;
+    padding: 2px;
+    user-select: none;
+    border-bottom: 1px gray solid;
+}
+
+.service__list__element:hover {
+    background: rgba(0, 0, 0, 20%);
+    cursor: pointer;
+}
+
+.service__list__element:active {
+    background: rgba(0, 0, 0, 40%);
+    cursor: pointer;
+}
+
+.service__list__element__pressed {
+    background: rgba(0, 0, 0, 40%);;
+}
+
+/* Блок паролей */
+.password {
+
+}
+
+/* Управление паролями */
+.password__control {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+/* Список паролей */
+/* таблица */
+.password__list {
+    font-size: 20px;
+    margin: 5px;
+    border-collapse: collapse;
+}
+
+thead {
+    text-align: left;
+}
+
+tr {
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+}
+
+th, td {
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    padding: 5px;
+}
+
+/* кнопка выделения */
+.checkbox {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* кнопка копирования */
+.button-copy {
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    margin: 0 5px 0 0;
+    user-select: none;
+    cursor: pointer;
+}
+
+/* -------------------- */
+/* -------------------- */
+/*  Стандартные цвета   */
+/* -------------------- */
+/* -------------------- */
+
+.red {
+    background: #DC3545;
+    color: white;
+}
+
+.green {
+    background: #28A745;
+    color: white;
+}
+
+.blue {
+    background: #007BFF;
+    color: white;
+}
+
+/* -------------------- */
+/* -------------------- */
+/* Стандартные элементы */
+/* -------------------- */
+/* -------------------- */
+
+/* button-standard */
+.button-standard {
+    margin: 5px;
+    font-size: 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    user-select: none;
+    padding: 5px;
+}
+
+.button-standard:hover {
+    border: 1px solid black;
+}
+
+.button-standard:active {
+    opacity: 70%;
+}
+
+/* input-standard */
+.input-standard {
+    margin: 5px;
+    font-size: 20px;
+    border-radius: 5px;
+    padding: 5px;
+}

@@ -1,0 +1,116 @@
+.movie {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.movie__content {
+    width: 100%;
+    padding-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.editor {
+    background: burlywood;
+    width: 100%;
+}
+
+.editor__isMovie__button {
+    width: 100px;
+    height: 30px;
+    margin: 10px;
+    background: gray;
+    border-radius: 5px;
+    color: white;
+    font-size: 18px;
+    border: 2px solid black;
+}
+
+.editor__isMovie__button:hover {
+    background: rgba(255,255,255,0.4);
+    color: black;
+}
+
+.editor__isMovie__button:active {
+    background: rgba(255,255,255,0.8);
+    color: black;
+}
+
+.editor__input-block {
+    font-size: 20px;
+    margin: 10px;
+}
+
+.editor__input-block input {
+    font-size: 20px;
+}
+
+.editor__input-block__inner {
+    margin-bottom: 10px;
+}
+
+.editor__input-block__input-name {
+    width: 20vw;
+    margin-right: 5px;
+}
+
+.editor__input-block__input-year {
+    width: 55px;
+}
+
+.editor__input-block__input-description {
+    width: 70vw;
+}
+
+.standard-button {
+    padding: 4px 5px;
+    margin: 5px;
+}
+
+.movie-block {
+    display: flex;
+}
+
+.movie-block__list {
+
+}
+
+.movie-block__list h2 {
+    text-align: center;
+    margin: 5px;
+}
+
+.viewed-table {
+    font-size: 20px;
+    margin: 5px;
+    border-collapse: collapse;
+    width: 50vw;
+}
+
+.wishlist-table {
+    font-size: 20px;
+    margin: 5px;
+    border-collapse: collapse;
+}
+
+.selectedTr {
+    background: rgba(80, 80, 80, 0.3);
+}
+
+/* цвета */
+
+.red {
+    background: #DC3545;
+    color: white;
+}
+
+.green {
+    background: #28A745;
+    color: white;
+}
+
+.blue {
+    background: #007BFF;
+    color: white;
+}
